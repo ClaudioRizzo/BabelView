@@ -7,9 +7,11 @@ BabelView allows to determine the impact of a code injection attack on Webviews 
 BabelView instruments an Android APK such that an information flow analysis (in particular, [FlowDroid](https://github.com/secure-software-engineering/FlowDroid)) will detect flows that can be enabled by malicious JavaScript executing inside the Webview. This does not require any JavaScript support from the flow analysis. BabelView achieves this by inserting a pure Java model of malicious JavaScript interacting with the available JavaScript interfaces.
 
 
-## Running from BabelView.jar
+## Running from BabelView.jar (recommended)
 
-To run BabelView, you will need:
+You will need:
+
+- The [BabelView release for RAID 2018](https://github.com/ClaudioRizzo/BabelView/releases).
 
 - OpenJDK 7 or 8. For the experiments in the paper we used `openjdk version "1.8.0_151"`. In principle, newer JDK versions should work, but we have not tested them. 
 
